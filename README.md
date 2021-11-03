@@ -44,7 +44,6 @@ The route prefix is `/api` by default
 
  ## Project Directory Structure
  ```
- D:\DESENV\WORKSPACES\WORKSPACE-GITLAB\NODE-REST-INTERVIEW-PROJECT-WILKER-MACHADO
 ¦   .dockerignore
 ¦   .env
 ¦   .env.test
