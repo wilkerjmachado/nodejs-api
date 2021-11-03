@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  database:
+    image: mongo
+    restart: always
+    volumes:
+      - "/data/db:/data/db"
+    ports:
+      - "27017:27017"
+  server:
+    build: ./
+    ports:
+      - "8080:8080"
+    environment:
+      - MONGO_URL=mongodb://database/app
+    links:
+      - database
+    depends_on:
+      - database
+  
